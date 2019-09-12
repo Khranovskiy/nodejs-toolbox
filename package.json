@@ -4,9 +4,17 @@
   "description": "",
   "main": "express.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon connect-to-mongo-server.js",
+    "start": "node connect-to-mongo-server.js"
   },
   "keywords": [],
   "author": "Denis Khranovsky <xronosd@gmail.com> (khranovsky.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
 }
